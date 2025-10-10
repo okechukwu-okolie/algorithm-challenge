@@ -61,7 +61,7 @@ numReversal(3456)
 
 
 
-//SENTNCE CAPITALISATION
+//SENTENCE CAPITALISATION
 
 const sentence = 'this is the way life should be'
 
@@ -72,3 +72,12 @@ console.log(capitalise(sentence))
 
 
 
+//FIZZ BUZZ
+let number = 30
+
+const fizzBuzz = (number) =>{
+    for (i = 0; i == 30; i++){
+        console.log('printing')
+    }
+}
+console.log(fizzBuzz(number))
