@@ -75,9 +75,36 @@ console.log(capitalise(sentence))
 //FIZZ BUZZ
 let number = 30
 
-const fizzBuzz = (number) =>{
-    for (i = 0; i == 30; i++){
-        console.log('printing')
+const fizzBuzz = (num) =>{
+    for (i = 0; i < num; i++){
+        if((i % 2 == 0)&(i % 3 == 0)){
+            console.log(`${i} is divisible by 3: FIZZ-BUZZ`)
+        }
+        else if(i % 2 == 0){
+            console.log(`${i} is divisible by 2: FIZZ`)
+        }else if(i % 3 == 0){
+            console.log(`${i} is divisible by 3: BUZZ`)
+        }
+        }
+        console.log(i)
     }
-}
+
 console.log(fizzBuzz(number))
+
+
+// MAX PROFIT
+
+const foo = ['one','two','three','four']
+const [three,one,two,four]= foo
+console.log(three,one,two)
+
+
+
+const personell = {
+    name:'Aquilla',
+    position:'Director',
+    ID: 1,
+}
+
+const {ID,position,name} = personell
+console.log(ID,position,name)
