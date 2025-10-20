@@ -123,3 +123,37 @@ let word = 'hippopotamus'
 for (let letter in word){
     console.log(word[letter])
 }
+
+let fruits = ['apple','banana','eggs','salmon']
+
+// const capitalise =(lists)=>{
+//     lists.forEach((list,index,arr)=>list[0].toUpperCase() + list.substring(1))
+// }
+
+fruits.forEach((fruit,index,arr)=>
+  arr[index] = fruit[0].toUpperCase() + fruit.substring(1)
+)
+console.log(fruits)
+
+let ages = [32,33,16,40,9]
+const agerange = fruits.filter(fruit => fruit.length > 5 )
+
+console.log(agerange)
+
+let numberss = [2,3,4,5]
+const sumAges = numberss.reduce((p,c)=>{
+  return p * c
+},1)
+
+console.log(sumAges)
+
+const group = new Set()
+group.add('mike')
+group.add('dare')
+group.add('kunle')
+group.add('shade')
+group.add('mike')
+group.add('dare')
+// group.delete('dare')
+console.log(group.has('dare'))
+console.log(group.size)
